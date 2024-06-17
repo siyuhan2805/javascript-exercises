@@ -12,12 +12,7 @@ const palindromes = function (string) {
     cleanedString = filtered.join("");
     //recombined reversed filtered chars
     revCleanedString = filtered.reverse().join("");
-    if (cleanedString === revCleanedString) {
-        return true
-    }
-    else {
-        return false;
-    }
+    return cleanedString === revCleanedString;
 };
 
 
